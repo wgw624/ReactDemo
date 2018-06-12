@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import BodyChild from './bodyChild';
+
 
 export default class BodyIndex extends React.Component{
   constructor(){
@@ -7,7 +9,12 @@ export default class BodyIndex extends React.Component{
     this.state={username:"胡歌",age:25}
 
   }
+  handleChildChange(event){
+
+    this.setState({age:event.target.value})
+  }
   changeAge(){
+
     this.setState({age:28});
   }
   render(){
@@ -23,6 +30,7 @@ export default class BodyIndex extends React.Component{
         <p> prop age:{this.props.age}</p>
         <p>state age:{this.state.age}</p>
         <input type="button" value={btnVal} onClick={this.changeAge.bind(this)} />
+        <BodyChild handleChildChange={this.handleChildChange.bind(this)} />
       </div>
     )
   }
