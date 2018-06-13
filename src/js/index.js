@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import ComponentHeader from './components/header';
 import ComponentFooter from './components/footer';
 import BodyIndex from './components/bodyIndex';
+import Clock from './components/clock';
 
 
 
@@ -13,6 +14,7 @@ class Index extends React.Component{
         <ComponentHeader />
         <BodyIndex age={24} />
         <ComponentFooter />
+        <Clock />
 
       </div>
     )
