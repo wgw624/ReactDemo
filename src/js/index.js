@@ -5,6 +5,7 @@ import ComponentFooter from './components/footer';
 import BodyIndex from './components/bodyIndex';
 import Clock from './components/clock';
 import Toggle from './components/toggle';
+import ActionTest from './components/bodyButtonTest';
 
 
 
@@ -13,7 +14,8 @@ class Index extends React.Component{
     return(
       <div>
         <ComponentHeader />
-        <BodyIndex age={24} />
+        <BodyIndex age={247} username={'位光伟'} />
+        <ActionTest />
         <ComponentFooter />
         <Clock />
         <Toggle />
