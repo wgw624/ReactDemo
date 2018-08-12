@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import BodyChild from './bodyChild';
 import PropTypes from 'prop-types';
 
+
 const defaultProps ={
   username:'这是测试的名字'
 }
@@ -45,6 +46,7 @@ export default class BodyIndex extends React.Component{
         <input type="button" value={btnVal} onClick={this.changeAge.bind(this)} />
           <input type="button" value='改变样式'  onClick={this.changeStyle.bind(this)} />
         <BodyChild handleChildChange={this.handleChildChange.bind(this)} />
+
       </div>
     )
   }
