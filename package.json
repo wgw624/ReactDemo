@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.3",
+    "babel-plugin-css-modules-transform": "^1.6.1",
+    "babel-plugin-react-html-attrs": "^2.1.0",
     "css-loader": "^0.28.11",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
