@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDom  from 'react-dom';
 
 import { Button } from 'antd';
-//import Button from 'antd/lib/button';
-//import 'antd/lib/button/style';
 
 export default class AntdComp extends React.Component{
   render(){

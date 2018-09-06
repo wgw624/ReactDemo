@@ -10,24 +10,36 @@ module.exports={
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['babel-preset-env','react']
+          presets: ['babel-preset-env','react'],
         }
       },
       {
           test: /\.css$/,
           exclude: /node_modules/,
+          //include: path.join(__dirname, '/node_modules/antd'),
           use:[
             {loader: 'style-loader'},
             {
-              loader: 'css-loader',
+              loader:'css-loader',
               options:{
                 modules:true
               }
-            }
-
+            },
           ]
 
       },
+      {
+          test: /\.css$/,
+          include:/node_modules/,
+          use: [
+                   {
+                     loader: "style-loader"
+                   },
+                   {
+                     loader: "css-loader",
+                    },
+               ],
+        },
     ]
   },
   output:{
